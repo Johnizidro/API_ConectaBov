@@ -11,9 +11,7 @@ const ModelSchema = new mongoose.Schema({
     especie: { type: String, required: true },
     raca: { type: String, required: true },
     tipoProducao: { type: String, required: true }, 
-    producaoMensal: { type: String, required: true }, 
-    tempoPastagem: { type: String, required: true },
-    observacao: { type: String, required: true } 
+    producaoMensal: { type: String, required: true } 
 });
 
 module.exports = mongoose.model('SerVer', ModelSchema);

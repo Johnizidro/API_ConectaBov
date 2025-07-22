@@ -67,18 +67,6 @@ const serVerValidator = Joi.object({
     "string.empty": "Produção mensal é obrigatória",
     "any.required": "Produção mensal é obrigatória",
   }),
-
-  tempoPastagem: Joi.string().required().messages({
-    "string.base": "Tempo de pastagem deve ser um texto",
-    "string.empty": "Tempo de pastagem é obrigatório",
-    "any.required": "Tempo de pastagem é obrigatório",
-  }),
-
-  observacao: Joi.string().required().messages({
-    "string.base": "Observação deve ser um texto",
-    "string.empty": "Observação é obrigatória",
-    "any.required": "Observação é obrigatória",
-  }),
 });
 
 module.exports = serVerValidator;

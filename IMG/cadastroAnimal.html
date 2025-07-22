@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cadastroAnimal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Cadastro Animal - ConectaBov</title>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <div class="cabecalho-div-">
+            <div class="cabecalho-div-login">
+                <div class="cabecalho-children">
+            <div class="cabecalho-div">
+                <!-- Ícone para abrir o menu -->
+                <!-- Ícone para abrir o menu -->
+                <span class="cabecalho-icone" onclick="abrirMenu()">
+                            <img src="/IMG/1-removebg-preview 4.png" width="150px">
+                        </span>
+
+                <!-- Menu lateral com botão de fechar -->
+                <div id="menuLateral" class="menu-lateral">
+                    <button class="fechar-menu" onclick="fecharMenu()">← Voltar</button>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <img src="/IMG/cardapio 2.png" alt="Início" class="icon"> Início
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cadastroAnimal.html">
+                                <img src="/IMG/cadastro 2.png" alt="Cadastro" class="icon"> Cadastro
+                            </a>
+                        </li>
+                        <li>
+                            <a href="consultaMensal.html">
+                                <img src="/IMG/pesquisa 2.png" alt="Consulta Mensal" class="icon"> Consulta Mensal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/IMG/dia-ensolarado 2.png" alt="Clima" class="icon"> Clima
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/IMG/telefone 2.png" alt="Contatos" class="icon"
+                                    style="width: 50px;margin-left: -6px;"> Contatos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="veterinarios.html">
+                                <img src="/IMG/vaca 2.png" alt="Veterinários" class="icon"
+                                    style="width: 50px;margin-left: -6px;"> Veterinários
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+                <div class="pesquisa-dad"><input class="pesquisa" type="text" name="" id="" size="80px"><img
+                        class="lupa" src="/IMG/magnifying-glass-solid.svg" alt="" srcset="" width="18px"></div>
+                <a href="login.html" class="icon-login"><img class="user-solid" src="/IMG/user-solid.svg" alt="" srcset="" width="35px">
+                    <p style="color: #5E7153;font-size: 12.5px;font-weight: bold;">Login</p>
+                </a>
+            </div>
+            <div class="dashboard">
+                <div class="dashboard-children">
+                    <div class="tituloCadastroGeral">
+                        <img src="/IMG/pesquisa 2.png" alt="" width="32px" class="tituloCadastroGeralImg">Cadastro
+                        Animal
+                    </div>
+
+                    <div class="cadastroBox">
+                        <div class="cadastroBox1">
+                            <img src="../IMG/vaca (1) 1.png" alt="" width="50px">
+                            <span style="color: #465640; font-weight: bold; font-size: 35px; margin-left: 10px;"> Cliente
+                               </span>
+                        </div>
+                        <form action="" method="">
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Nome do Animal">
+                                <div class="labelline">Nome do Animal</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Peso">
+                                <div class="labelline">Peso</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Data de Nascimento">
+                                <div class="labelline">Data de Nascimento</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Espécie">
+                                <div class="labelline">Espécie</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Tipo de Produção">
+                                <div class="labelline">Tipo de Produção</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Tempo de Pastagem">
+                                <div class="labelline">Tempo de Pastagem</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Altura">
+                                <div class="labelline">Altura</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Sexo">
+                                <div class="labelline">Sexo</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Pelagem">
+                                <div class="labelline">Pelagem</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Raça">
+                                <div class="labelline">Raça</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Produção Mensal">
+                                <div class="labelline">Produção Mensal</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Consumo Mensal">
+                                <div class="labelline">Consumo Mensal</div>
+                            </div>
+
+                            <div class="botaoContainer">
+                                <input type="submit" value="Enviar" class="botaoEnviar">
+                              </div>
+                        </form>
+                    </div>
+
+                    <div class="cadastroBox">
+                        <div class="cadastroBox1">
+                            <span style="color: #465640; font-weight: bold; font-size: 35px;">Vacinação:</span>
+                        </div>
+                        <form action="" method="">
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Nome da vacina:">
+                                <div class="labelline">Nome da vacina</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Data da vacinação:">
+                                <div class="labelline">Data da vacinação</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Dose:">
+                                <div class="labelline">Dose</div>
+                            </div>
+
+                            <div class="area">
+                                <input type="text" name="" id="" required class="campoCadastro input"
+                                    placeholder=" Espécie:">
+                                <div class="labelline">Espécie</div>
+                            </div>
+
+                            <div class="botaoContainer">
+                                <input type="submit" value="Enviar" class="botaoEnviar">
+                              </div>
+
+
+                        </form>
+                    </div>
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide">slide 1</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">slide 2</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">slide 3</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">slide 4</div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-sub">
+            <div class="footer-children">
+                <div class="entre-em-contato">
+                    <p style="color: white;">Entre em </p>
+                    <p style="color: white;">Contato</p>
+                </div>
+                <div class="logo-rede">
+                    <div class="facebook"><img src="/IMG/facebook-f-brands.svg" width="16px"></div>
+                    <div class="instagram"><img src="/IMG/instagram-brands.svg" width="16px"></div>
+                    <div class="whatsaap"><img src="/IMG/whatsapp-brands.svg" width="16px"></div>
+                    <div class="linkedin"><img src="/IMG/linkedin-in-brands.svg" width="16px"></div>
+                </div>
+            </div>
+            <div class="img-gado">
+                <img src="/IMG/1-removebg-preview 3.png" alt="">
+            </div>
+        </div>
+
+        <div class="divis">
+            <hr class="divisao">
+        </div>
+        <center style="color: white; opacity: 0.5; padding: 0.5%; font-size: small;"><p>© 2025 Todos os direitos reservados. ConectaBov</p></center>
+    </div>
+    <div id="entreemcontato"></div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../js/script.js"></script>
+
+</html>

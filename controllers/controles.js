@@ -12,30 +12,18 @@ exports.create = async (req, res) => {
     especie,
     raca,
     tipoProducao,
-    producaoMensal,
-    tempoPastagem,
-    observacao,
+    producaoMensal
   } = req.body;
 
   try {
-    const novoCadastro = new Model({
-      codigoSisbov,
-      nome,
-      altura,
-      peso,
-      sexo,
-      dataNascimento,
-      pelagem,
-      especie,
-      raca,
-      tipoProducao,
-      producaoMensal,
-      tempoPastagem,
-      observacao,
-    });
-    await novoCadastro.save();
-    res.status(201).json(novoCadastro);
+    const novoAnimal = new Model(req.body);
+    await novoAnimal.save();
+    return res.status(201).json({ message: 'Animal cadastrado com sucesso' });
   } catch (error) {
-    res.status(500).json({ erro: "Erro ao incluir cadastro" });
+    if (error.code === 11000) {
+      return res.status(400).json({ message: 'Código Sisbov já cadastrado' });
+    }
+    return res.status(500).json({ message: 'Erro ao cadastrar', error: error.message });
   }
 };
+
